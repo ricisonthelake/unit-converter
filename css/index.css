@@ -1,0 +1,225 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+    /* colors */
+    --clr-header-dark: #6943FF;
+    --clr-header-light: #B294FF;
+    --clr-main-light: #f4f4f4;
+    --clr-border-light: #f5deb3;
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+
+    /* font-sizes */
+    --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+    --fs-800: 3.5rem;
+    --fs-700: 1.5rem;
+    --fs-600: 1rem;
+    --fs-500: 1rem;
+    --fs-400: 0.9375rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    /* font-families */
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Inter", sans-serif;
+}
+
+@media (min-width: 35em) {
+    :root {
+        --fs-800: 5rem;
+        --fs-700: 2.5rem;
+        --fs-600: 1.5rem;
+        --fs-500: 1.25rem;
+        --fs-400: 1rem;
+    }
+}
+
+@media (min-width: 45em) {
+    :root {
+        /* font-sizes */
+        --fs-800: 6.25rem;
+        --fs-700: 3.5rem;
+        --fs-600: 2rem;
+        --fs-500: 1.75rem;
+        --fs-400: 1.125rem;
+    }
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+/* html:focus-within {
+    scroll-behavior: smooth;
+} */
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+/* a:not([class]) {
+    text-decoration-skip-ink: auto;
+} */
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    /* html:focus-within {
+        scroll-behavior: auto;
+    } */
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        /* scroll-behavior: auto !important; */
+    }
+}
+
+body {
+    margin: 0;
+    background-color: var(--clr-black);
+}
+
+.container {
+    width: 90%;
+    max-width: 550px;
+    height: 729px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 285px;
+    background-color: var(--clr-header-dark);
+    background-color: 1F2937;
+    color: #fff;
+    text-align: center;
+    border-top: 5px ridge var(--clr-border-light);
+    border-left: 5px ridge var(--clr-border-light);
+    border-top-left-radius: 3.5%;
+    border-right: 5px ridge var(--clr-border-light);
+    border-top-right-radius: 3.5%;
+}
+
+h1 {
+    margin: 1rem auto 0;
+    font-weight: 800;
+}
+
+#unit-input {
+    width: 117px;
+    height: 83px;
+    margin: .25em auto .35em;
+    padding: 0 10px;
+    text-align: center;
+    color: white;
+    background: transparent;
+    border: 2px solid var(--clr-header-light);
+    border-radius: 0.25rem;
+    font-size: 4.8rem;
+    font-weight: 800;
+}
+
+button {
+    width: 117px;
+    height: 42px;
+    font-size: 1.25rem;
+}
+
+#unitNumber {
+    display: flex;
+    max-width: 217px;
+    height: 51px;
+    margin: .25em auto;
+    padding: 10px 10px;
+    font-size: 58px;
+    font-weight: 900;
+    background-color: var(--clr-header-dark);
+    border: 2px solid var(--clr-header-light);
+    border-radius: 0.25rem;
+    /* border: none; */
+    color: var(--clr-white);
+}
+
+main {
+    padding: 35px 25px;
+    background-color: var(--clr-main-light);
+    border-bottom: 5px ridge var(--clr-border-light);
+    border-left: 5px ridge var(--clr-border-light);
+    border-bottom-left-radius: 3.5%;
+    border-right: 5px ridge var(--clr-border-light);
+    border-bottom-right-radius: 3.5%;
+}
+
+.converted-unit-container {
+    max-width: 550px;
+    height: 108px;
+    padding: 30px 20px;
+    margin-bottom: 24px;
+    background-color: var(--clr-white);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.converted-unit-heading {
+    margin-bottom: 5px;
+    color: #5a537b;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
