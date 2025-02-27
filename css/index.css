@@ -1,3 +1,8 @@
+:root {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
 body {
     margin: 0;
     background-color: black;
@@ -13,4 +18,16 @@ body {
     border-radius: 1em;
     text-align: center;
     color: white
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+
+
+@media (min-width: 481px) {
+    h1 {
+        font-size: 3rem;
+    }
 }
