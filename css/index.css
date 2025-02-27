@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    width: 90%;
+    max-width: 550px;
+    height: 729px;
+    margin: 3em auto;
+    background-color: #1F2937;
+    border: 3px solid black;
+    border-radius: 1em;
+    text-align: center;
+    color: white
+}
