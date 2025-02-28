@@ -20,14 +20,40 @@ body {
     color: white
 }
 
-h1 {
-    font-size: 2rem;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 285px;
+    background-color: #6943FF;
 }
 
+h1 {
+    font-size: 28px;
+    font-weight: 900;
+    text-shadow: 2px 2px #000;
+}
 
+#number-to-convert {
+    width: 117px;
+    height: 83px;
+    margin: .25em auto .35em;
+    padding: 0 10px;
+    text-align: center;
+    background: rgb(137, 174, 244);
+    border: 3px solid rgba(30, 15, 169, 0.523);
+    border-radius: 0.25em;
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow: 2px 2px #000;
+    box-shadow: 0.05em 0.05em #00000041;
+}
 
-@media (min-width: 481px) {
-    h1 {
-        font-size: 3rem;
-    }
+#convert-button {
+    width: 117px;
+    height: 42px;
+    border-radius: 0.25em;
+    box-shadow: 0.25em 0.25em #00000041;
+
 }
