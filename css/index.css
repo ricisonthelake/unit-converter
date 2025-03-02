@@ -11,7 +11,7 @@ body {
 .container {
     width: 90%;
     max-width: 550px;
-    height: 729px;
+    height: auto;
     margin: 3em auto;
     background-color: #1F2937;
     border: 3px solid black;
@@ -26,6 +26,15 @@ header {
     align-items: center;
     height: 285px;
     background-color: #6943FF;
+    color: #ffffff;
+    text-align: center;
+    border-top: 5px ridge #f5deb3;
+    border-left: 5px ridge #f5deb3;
+    border-right: 5px ridge #f5deb3;
+    border-top-right-radius: 3.5%;
+    border-top-left-radius: 3.5%;
+
+
 }
 
 h1 {
@@ -55,5 +64,37 @@ h1 {
     height: 42px;
     border-radius: 0.25em;
     box-shadow: 0.25em 0.25em #00000041;
+    color: #3d3d3d;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-shadow: 1px 1px #6943FF;
 
+}
+
+main {
+    padding: 35px 25px;
+    background-color: #f4f4f4;
+    border-bottom: 5px ridge #f5deb3;
+    border-left: 5px ridge #f5deb3;
+    border-right: 5px ridge #f5deb3;
+    border-bottom-right-radius: 3.5%;
+    border-bottom-left-radius: 3.5%;
+}
+
+.conversion-result {
+    max-width: 550px;
+    height: auto;
+    padding: 30px 20px;
+    margin-bottom: 24px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.conversion-result-heading {
+    margin-bottom: 5px;
+    color: #5a537b;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
